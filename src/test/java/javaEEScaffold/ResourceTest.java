@@ -12,27 +12,27 @@ import com.vino.scaffold.shiro.entity.Resource;
 import com.vino.scaffold.shiro.service.ResourceService;
 
 public class ResourceTest {
-	private  ClassPathXmlApplicationContext ctx ;
-	private ResourceService resourceService;
-
-	@Before
-	public void setUp() throws Exception {
-		 ctx =  new ClassPathXmlApplicationContext("applicationContext.xml"); 
-		 resourceService=ctx.getBean("resourceService",ResourceService.class);
-	}
-
-	@After
-	public void tearDown() throws Exception {
-		ctx.close();
-	}
-
-	@Test
-	public void testSave() {
-		resourceService.save(new Resource("½ÇÉ«¹ÜÀí", "menu", "role:menu"));
-		resourceService.save(new Resource("´´½¨½ÇÉ«", "button", "role:create"));
-		resourceService.save(new Resource("É¾³ý½ÇÉ«", "button", "role:delete"));
-		resourceService.save(new Resource("±à¼­½ÇÉ«", "button", "role:update"));
-		resourceService.save(new Resource("²éÑ¯½ÇÉ«", "button", "role:view"));
-	}
+	// private  ClassPathXmlApplicationContext ctx ;
+	// private ResourceService resourceService;
+	//
+	// @Before
+	// public void setUp() throws Exception {
+	// 	 // ctx =  new ClassPathXmlApplicationContext("applicationContext.xml");
+	// 	// resourceService=ctx.getBean("resourceService",ResourceService.class);
+	// }
+	//
+	// @After
+	// public void tearDown() throws Exception {
+	// 	// ctx.close();
+	// }
+	//
+	// @Test
+	// public void testSave() {
+	// 	// resourceService.save(new Resource("ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½", "menu", "role:menu"));
+	// 	// resourceService.save(new Resource("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«", "button", "role:create"));
+	// 	// resourceService.save(new Resource("É¾ï¿½ï¿½ï¿½ï¿½É«", "button", "role:delete"));
+	// 	// resourceService.save(new Resource("ï¿½à¼­ï¿½ï¿½É«", "button", "role:update"));
+	// 	// resourceService.save(new Resource("ï¿½ï¿½Ñ¯ï¿½ï¿½É«", "button", "role:view"));
+	// }
 
 }

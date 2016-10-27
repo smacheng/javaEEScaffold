@@ -47,7 +47,7 @@ dependencies {
 }
 
 test {
-    systemProperties 'property': 'value'
+    // systemProperties 'property': 'value'
 }
 
 uploadArchives {
